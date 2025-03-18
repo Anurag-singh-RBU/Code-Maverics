@@ -1,0 +1,144 @@
+.animated-text {
+
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Consolas", monospace;
+    display: inline-block;
+    background: linear-gradient(90deg , #4CAF50 , #2196F3 , #FF5722);
+    background-size: 300% 300%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent; 
+    color: transparent; 
+    animation: gradientAnimation 3s ease infinite;
+    margin: 10px 0;
+}
+
+.hero-content{
+
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.titleOne{
+
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Consolas";
+    text-align : center;
+    margin-top : 150px;
+    margin-bottom : -25px;
+    color : rgb(73,77,80);
+
+}
+
+.titleTwo{
+
+    font-size: 60px;
+    font-weight: bold;
+    color : rgb(73,77,80);
+    font-family: "Consolas";
+    text-align : center;
+    display : inline;
+
+}
+
+.titleThree{
+
+    font-size: 1.125rem;
+    font-weight: medium;
+    font-family: "Consolas";
+    text-align : center;
+    margin-top : -60px;
+    margin-bottom : -13px;
+    color : rgb(73,77,80);
+
+}
+
+.titleFour{
+
+    font-size: 1.125rem;
+    font-weight: medium;
+    font-family: "Consolas";
+    text-align : center;
+    margin-top : 0px;
+    margin-bottom : 0px;
+    color : rgb(73,77,80);
+
+}
+
+.titleFive{
+
+    font-size : 30px;
+    font-weight: bolder;
+    font-family: "Consolas";
+    text-align : center;
+    margin-top : -30px;
+    margin-bottom : 10px;
+    color : rgba(87, 97, 105, 0.915);
+
+}
+
+.titleSix{
+
+    font-size : 50px;
+    font-weight: bold;
+    font-family: Consolas;
+    text-align : center;
+    margin-top : 0px;
+    margin-bottom : -40px;
+    color : rgba(87, 97, 105, 0.915);
+
+}
+
+#one{
+
+    height : 50px;
+    width : 50px;
+    background-image : url("icons8-react-native.gif");
+    background-repeat : no-repeat;
+    background-size : contain;
+
+}
+
+#two{
+
+    height : 55px;
+    width : 55px;
+    background-image : url("icons8-spring-boot-48.png");
+    background-repeat : no-repeat;
+    background-size : contain;
+
+}
+
+#three{
+
+    height : 60px;
+    width : 60px;
+    background-image : url("icons8-bootstrap-48.png");
+    background-repeat : no-repeat;
+    background-size : contain;
+    margin-top : -4px;
+
+}
+
+#four{
+
+    height : 50px;
+    width : 50px;
+    background-image : url("icons8-material-ui-48.png");
+    background-repeat : no-repeat;
+    background-size : cover;
+
+}
+
+@keyframes gradientAnimation{
+
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+
+}

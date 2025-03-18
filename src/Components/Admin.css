@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family : Geist Sans, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+h1{
+
+    text-align : center;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-right : 15px;
+    letter-spacing : 2px;
+
+}
+
+.form-container {
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 40px;
+    width: 1000px;
+    max-width: 700px; 
+    height: auto;
+    margin-top : 50px;
+    margin-bottom : 100px;
+    padding-top : 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing : 2px;
+}
+
+.event-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.event-form input,
+.event-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-family: 'Consolas', monospace;
+    background: #f9f9f9;
+}
+
+.add-btn {
+    width: 100%;
+    background-color: #ff3366;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Consolas', monospace;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 15px rgba(255, 51, 102, 0.5);
+}
+
+.error {
+    color: #ff0000; /* Bright red color for errors */
+    font-family: 'Consolas', monospace;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: -5px;
+    font-weight: bold;
+}
+
+#Admin{
+
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(90deg , #4CAF50 , #2196F3 , #FF5722);
+    background-size: 300% 300%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent; 
+    color: transparent; 
+    animation: gradientAnimation 3s ease infinite;
+    text-align : center;
+    margin: 10px 0;
+    margin-right : 8px;
+
+}
