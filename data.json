@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "name": "Spider Craft",
+        "start_date": "2025-03-19",
+        "end_date": "2025-03-19",
+        "venue": "Auditorium Hall",
+        "event_type": "Workshop"
+    },
+    {
+        "id": 2,
+        "name": "AI Innovation Summit",
+        "start_date": "2025-04-05",
+        "end_date": "2025-04-07",
+        "venue": "Main Seminar Hall",
+        "event_type": "Conference"
+    },
+    {
+        "id": 3,
+        "name": "Event 3",
+        "start_date": "2025-05-05",
+        "end_date": "2025-05-07",
+        "venue": "Tech Park Room 202",
+        "event_type": "Hackathon"
+    },
+    {
+        "id": 4,
+        "name": "Cloud Mastery Bootcamp",
+        "start_date": "2025-03-20",
+        "end_date": "2025-03-25",
+        "venue": "Library Conference Room",
+        "event_type": "Bootcamp"
+    },
+    {
+        "id": 5,
+        "name": "Cyber Security Awareness",
+        "start_date": "2025-04-15",
+        "end_date": "2025-04-18",
+        "venue": "IT Block Room 101",
+        "event_type": "Workshop"
+    },
+    {
+        "id": 6,
+        "name": "Flutter Fiesta",
+        "start_date": "2025-07-10",
+        "end_date": "2025-07-12",
+        "venue": "Mobile Lab",
+        "event_type": "Workshop"
+    },
+    {
+        "id": 7,
+        "name": "React Revolution",
+        "start_date": "2025-06-01",
+        "end_date": "2025-06-03",
+        "venue": "Web Dev Lab",
+        "event_type": "Seminar"
+    },
+    {
+        "id": 8,
+        "name": "Java DSA Mega Contest",
+        "start_date": "2025-05-15",
+        "end_date": "2025-05-17",
+        "venue": "Coding Arena",
+        "event_type": "Competition"
+    }
+]

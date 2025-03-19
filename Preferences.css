@@ -1,0 +1,200 @@
+.navigate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    width: 100%;
+    background-color: rgb(237, 237, 237);
+    padding: 0 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .back-btn {
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 25px;
+    width: 40%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .search-icon {
+    color: gray;
+    margin-right: 8px;
+  }
+  
+  .search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+  }
+  
+  .toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: gray;
+    transition: color 0.3s ease;
+    position: absolute;
+    right: 40px;
+  }
+  
+  .toggle-btn:hover {
+    color: black;
+  }
+
+#event-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}   
+
+.event-card {
+    height: 450px;
+    width: 400px;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb); 
+    animation: gradientMotion 6s infinite alternate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    color: #333;
+    padding: 20px;
+    gap: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); 
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+}
+
+@keyframes gradientMotion {
+    0% { background: linear-gradient(135deg, #a1c4fd, #c2e9fb); }
+    50% { background: linear-gradient(135deg, #ffecd2, #fcb69f); }
+    100% { background: linear-gradient(135deg, #d4fc79, #96e6a1); }
+}
+
+.event-title {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    line-height: 50px;
+    border-radius: 10px;
+    margin-bottom : 30px;
+    margin-top : 30px;
+    text-align : center;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size : 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+.event-details {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(-45deg, #e3f2fd, #fce4ec, #e8f5e9, #fffde7); /* Pastel shades */
+    background-size: 400% 400%; /* Animation ke liye large background */
+    animation: detailsMotion 10s ease infinite; /* Smooth motion */
+    line-height: 50px;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-family: Consolas;
+    color: #333; 
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border: 2px solid #f0f0f0;
+}
+
+@keyframes detailsMotion {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.event-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.btn-description, .btn-register {
+    height: 40px;
+    background-color: #ff3366;
+    width: 150px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Consolas;
+
+    box-shadow: 0 4px 8px rgba(255, 51, 102, 0.2);
+
+    transition: 
+        background-color 0.3s ease, 
+        box-shadow 0.3s ease, 
+        transform 0.2s ease;
+}
+
+.btn-description:hover, .btn-register:hover {
+    background-color: #e62e5c;
+    box-shadow: 0 6px 12px rgba(255, 51, 102, 0.3); 
+}
+
+.btn-description:active, 
+.btn-register:active {
+    transform: scale(0.92);  /* Thoda aur noticeable shrink effect */
+    box-shadow: 0 2px 5px rgba(255, 51, 102, 0.5);
+    transition: transform 0.1s ease;  /* Fast response for better click feel */
+}
+
+.btn-description:focus-visible, 
+.btn-register:focus-visible {
+    outline: 3px solid #ff99aa; /* Focus ke liye halka outline effect */
+    outline-offset: 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    #event-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    #event-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 card per row on mobile */
+    }
+}

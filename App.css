@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family : Geist Sans, sans-serif;
+  width : 100%;
+}
+
+.navbar {
+  position: fixed;
+  height : 55px;
+  top: 0;
+  width: 110%;
+  background-color: rgb(237, 237, 237);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  transition: background-color 0.9s;
+  margin-left : -240px;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+  background-image: url("icons8-events-48.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  font-weight: 500;
+  padding: 8px 10px;
+  transition: color 0.3s, background-color 0.3s;
+  line-height : 30px;
+}
+
+.nav-links a:hover {
+
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+
+}
+
+#home{
+
+  padding-left : 30px;
+  text-decoration : none;
+
+}
+
+li{
+
+  line-height : 35px;
+
+}
+
+.first{
+
+  height : 50px;
+  text-align : center;
+
+}
+
+#customButton {
+  height: 35px;
+  width: 170px;
+  background-color: #F8F9FA;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 660px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+#customButton:hover {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+#customButton:active {
+  transform: scale(0.97); 
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+
+#socialIcons{
+
+  height : 55px;
+  width : 100px;
+  display : flex;
+  justify-content : center;
+  gap : 15px;
+  margin-left : 20px;
+  align-items : center;
+
+}
+
+#starIcon{
+
+  background-image : url("icons8-star-48.png");
+  height : 20px;
+  width : 20px;
+  background-repeat : no-repeat;
+  background-size : contain;
+
+}
+
+#s1{
+
+  height: 50px;
+  width: 50px;
+  background-image: url("icons8-github-64.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top : 8px;
+  vertical-align : center;
+
+}
+
+#s2{
+
+  height: 50px;
+  width: 50px;
+  background-image: url("icons8-linkedin-48.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top : 8px;
+  vertical-align : center;
+
+}
+
+#s3{
+
+  height: 50px;
+  width: 50px;
+  background-image: url("icons8-instagram-48.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top : 8px;
+  vertical-align : center;
+
+}
+
+#starIconTwo{
+
+  background-image : url("icons8-github-94.png");
+  height : 20px;
+  width : 20px;
+  background-repeat : no-repeat;
+  background-size : contain;
+
+}
+
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+
+#card {
+  height: 450px;
+  width: 400px;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb); 
+  animation: gradientMotion 6s infinite alternate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  color: #333;
+  padding: 20px;
+  gap: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+#card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); 
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+}
+
+@keyframes gradientMotion {
+  0% { background: linear-gradient(135deg, #a1c4fd, #c2e9fb); }
+  50% { background: linear-gradient(135deg, #ffecd2, #fcb69f); }
+  100% { background: linear-gradient(135deg, #d4fc79, #96e6a1); }
+}
+
+.details {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(-45deg, #e3f2fd, #fce4ec, #e8f5e9, #fffde7); /* Pastel shades */
+  background-size: 400% 400%; /* Animation ke liye large background */
+  animation: detailsMotion 10s ease infinite; /* Smooth motion */
+  line-height: 50px;
+  padding-left: 10px;
+  border-radius: 10px;
+  font-family: Consolas;
+  color: #333; 
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  border: 2px solid #f0f0f0;
+}
+
+@keyframes detailsMotion {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+#outer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+#description, 
+#register {
+    height: 40px;
+    background-color: #ff3366;
+    width: 150px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Consolas;
+
+    box-shadow: 0 4px 8px rgba(255, 51, 102, 0.2);
+
+    transition: 
+        background-color 0.3s ease, 
+        box-shadow 0.3s ease, 
+        transform 0.2s ease;
+}
+
+#description:hover, 
+#register:hover {
+    background-color: #e62e5c;
+    box-shadow: 0 6px 12px rgba(255, 51, 102, 0.3); 
+}
+
+#description:active, 
+#register:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(255, 51, 102, 0.5);
+}
+
+.event{
+
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  line-height: 50px;
+  border-radius: 10px;
+  margin-bottom : 30px;
+  margin-top : 30px;
+  text-align : center;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size : 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+
+}
+
+.animated{
+
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Bebas Neue', sans-serif;
+  display: inline-block;
+  background: linear-gradient(90deg , #4CAF50 , #2196F3 , #FF5722);
+  background-size: 300% 300%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent; 
+  color: transparent; 
+  animation: gradientAnimation 3s ease infinite;
+
+}
+
+.no-events {
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: Consolas, monospace;  /* Consolas Font Applied */
+  display: inline-block;
+}
+
+.animated-char {
+  display: inline-block;
+  color: #ff3366; /* Default color */
+  animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+      color: #ff3366;
+  }
+  25% {
+      color: #ffcc00;
+  }
+  50% {
+      color: #33cc33;
+  }
+  75% {
+      color: #3399ff;
+  }
+  100% {
+      color: #ff3366;
+  }
+}
+
+
+
